@@ -50,7 +50,7 @@
   (fn []
     [:div.notify-wrapper
      (for [n @pending-notifications*]
-       ^{:key n}
+       ^{:key (random-uuid)}
        [notification n])]))
 
 
